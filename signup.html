@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+    <style>
+        .text-mycolor {
+            color: #0dbf41;
+        }
+
+        .bg-mycolor {
+            background-color: #0dbf41;
+        }
+
+        /* menu code start */
+
+        .menu {
+            min-height: 50px;
+            line-height: 20px;
+        }
+
+        nav ul li {
+            margin-left: 35px;
+        }
+
+        .menu-text-color {
+            color: white;
+            background-color: #212529;
+
+        }
+
+        .menu-text-color:hover {
+            color: #0dbf41;
+            background-color: #212529;
+        }
+
+
+        .login_a {
+            color: #0dbf41;
+        }
+
+        .login_a:hover {
+            color: #0dbf41;
+        }
+
+        .login_btn:hover {
+            transform: scale(1.1);
+            transition: all ease 1s;
+        }
+
+
+
+        /* menu code end */
+
+
+
+
+        /* footer_box code start */
+
+        .footer_link {
+            text-decoration: none;
+            color: white
+        }
+
+        .footer_link:hover {
+            color: #0dbf41;
+        }
+
+        /* footer_box code end */
+
+
+        .back-pic {
+            background-image: url("img/reg-back.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            min-height: 700px;
+            background-attachment: fixed;
+
+        }
+
+        .reg_form {
+            margin-top: 10px;
+            border-radius: 20px;
+
+
+        }
+
+        .login-a:hover {
+            color: blue !important ;
+            text-decoration: underline !important;
+            transition: all ease 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  menu code start -->
+
+    <div class="container-fluid">
+
+
+        <div class="row px-0 bg-dark menu sticky-top">
+
+            <div class="col-sm-2 pt-3 ps-5">
+                <b class="text-mycolor fs-3">DESIRECART</b>
+            </div>
+
+            <div class="col-sm-7 px-0 ">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse ms-5 " id="navbarSupportedContent">
+                            <ul class="navbar-nav   mb-lg-0 bg-dark">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="home.html"><i
+                                            class="fa-solid fa-house-user"></i> Home</a>
+                                </li>
+                                <li class="nav-item dropdown  ">
+                                    <a class="nav-link dropdown-toggle menu-text-color" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-brands fa-product-hunt"></i> Product
+                                    </a>
+                                    <ul class="dropdown-menu p-0 mt-1">
+                                        <li class="ms-0 "><a class="dropdown-item menu-text-color py-2" href="men.html">Men</a>
+                                        </li>
+                                        <li class="ms-0 "><a class="dropdown-item menu-text-color py-2"
+                                                href="women.html">Women</a></li>
+
+                                        <li class="ms-0 "><a class="dropdown-item menu-text-color py-2"
+                                                href="kids.html">Kids</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-text-color" href="order.html"><i
+                                            class="fa-solid fa-cart-shopping "></i> My Order</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link menu-text-color " href="my-profile.html"><i class="fa-solid fa-user"></i> My
+                                        Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-text-color " href="customer.html"><i class="fa-solid fa-phone"></i>
+                                        Customer Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-sm-3 ">
+                <button class="btn login_btn bg-light border my-2 px-4"><a href="signup.html"
+                        class="text-decoration-none fw-bold login_a"><i class="fa-solid fa-users"></i> Sign
+                        Up</a></button>
+                <button class="btn login_btn bg-light border my-2 px-4 ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal" ><a href=""
+                        class="text-decoration-none fw-bold text-mycolor login_a" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In <i
+                            class="fa-solid fa-right-to-bracket"></i></a></button>
+            </div>
+
+        </div>
+
+
+        <!--  menu code end -->
+
+
+
+        <!-- signup_box code start -->
+
+
+        
+            <div class="row p-0">
+                <div class="col-sm-12 back-pic p-0">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8 text-white rounded-5"
+                            style="min-height: 600px;margin-top: 4%;margin-bottom: 4%;background-color: rgba(13,191,65,.2);">
+                            <div class="row">
+                                <div class="col-sm-12 text-center my-3">
+                                    <h1><b class="text-white">REGISTRACTION</b> FROM</h1>
+                                </div>
+                                <hr>
+                            </div>
+                            <form action="">
+                                <div class="row fs-5 fw-bold px-4">
+                                    <div class="col-sm-6">
+                                        Name <br>
+                                        <input type="text" placeholder="Enter Your Name.."
+                                            class="form-control reg_form"> <br>
+
+                                        Email Id <br>
+                                        <input type="email" placeholder="Enter Your Email Id.."
+                                            class="form-control reg_form"> <br>
+
+                                        Password <br>
+                                        <input type="password" placeholder="Enter Your Password.."
+                                            class="form-control reg_form"> <br>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        Mobile No <br>
+                                        <input type="number" placeholder="Enter Your Name.."
+                                            class="form-control reg_form"> <br>
+
+                                        Upload Image <br>
+                                        <input type="file" placeholder="Enter Your Email Id.."
+                                            class="form-control reg_form"> <br>
+
+                                        Confirm Password <br>
+                                        <input type="password" placeholder="Enter Your Password.."
+                                            class="form-control reg_form"> <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        Address <br>
+                                        <textarea class="form-control reg_form" cols="30" rows="4"></textarea>
+                                    </div>
+                                    <div class="form-check fw-normal fs-6 mt-3">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckIndeterminate">
+                                        <label class="form-check-label" for="flexCheckIndeterminate">
+                                            I accept the terms of Use & Privacy Policy
+                                        </label>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <button class="btn bg-mycolor border border-success my-4 w-100">
+                                                <a href="" class="text-decoration-none text-dark fw-bold">REGISTRATION
+                                                    NOW</a>
+                                            </button>
+                                        </div>
+                                        <div class="col-sm-6 fw-normal pt-4 ps-5">
+                                            <p>Already have an account ?
+                                                <a href="" class="text-decoration-none text-white fw-bold login-a"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Login Here</a>
+                                            </p>
+                                        </div>
+
+
+                                        <!-- Button trigger modal -->
+                                       
+
+                                        <!-- Modal start-->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    
+                                                    <div class="modal-body  text-center  py-4 rounded" style="background:linear-gradient(90deg,blue,skyblue) ;">
+
+                                                        <a href="" class="fs-2  text-dark float-end "  data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i></a>
+
+                                                        <div class="modal_heading text-dark text-center">Log In Here <i class="fa-solid fa-users"></i></div>
+                                                        <hr>
+
+                                                        <div class="input-group mt-5">
+                                                            <span class="input-group-text"><i class="fa-solid fa-user  "></i></span>
+                                                            <input type="email" placeholder="Enter Your Email Id.." class="form-control ">
+                                                        </div>
+
+                                                        <div class="input-group mt-3">
+                                                            <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+                                                            <input type="password" placeholder="Enter Your Password.. " class="form-control ">
+                                                        </div>
+
+                                                        <input type="submit" value="Log In" name="" id="" class=" btn text-dark fw-bold w-50 mt-3 rounded-3  bg-mycolor border border-dark">
+                                                        <p class="text-dark fw-normal fs-6 mt-3"> Have not account yet ?
+                                                            <a href="" class="text-decoration-none text-dark fw-bold login-a"
+                                                                data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</a>
+                                                        </p>
+
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal end-->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- signup_box code end -->
+
+
+
+
+
+        <!--  footer_box code start-->
+
+        <div class="row bg-dark text-center">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="container mt-4 text-white ">
+                    <div class="row">
+                        <div class="col-sm-3  py-4">
+                            <span>Desire<b class="text-mycolor fs-4 pb-2">Cart <i class="fa-solid fa-cart-shopping"></i>
+                                </b></span> <br />
+                            <span style="font-size:14px;">Address : <a href="#" class="footer_link"> Kanpur Nagar, Uttar
+                                    Pradesh 208021</a> <br /></span>
+                            Phone : <a href="#" class="footer_link"> +91 6306629483</a> <br />
+                            E-mail : <a href="#" class="footer_link"> Kkg765576@gmail.com</a> <br />
+                        </div>
+                        <div class="col-sm-3 py-4">
+                            <span class="fs-5  pb-2">Information</span> <br>
+                            <a href="" class="footer_link ">About Us</a> <br>
+                            <a href="" class="footer_link ">CheckOut</a> <br>
+                            <a href="" class="footer_link ">Contact Us</a> <br>
+                        </div>
+                        <div class="col-sm-3 py-4">
+                            <span class="fs-5  pb-2">My Account</span> <br>
+                            <a href="" class="footer_link ">My Account</a> <br>
+                            <a href="" class="footer_link ">Contact</a> <br>
+                            <a href="" class="footer_link">Shopping Cart</a> <br>
+                        </div>
+
+                        <div class="col-sm-3 py-4">
+                            <span class="fs-5  pb-2">My Account</span> <br>
+                            <a href="" class="footer_link ">My Account</a> <br>
+                            <a href="" class="footer_link ">Contact</a> <br>
+                            <div class="input-group mt-2">
+                                <input type="email" placeholder="Enter Your Mail" name="" id=""
+                                    class="w-50 border-0 ps-3">
+                                <span class="input-group-text bg-mycolor border-0">SUBSCRIBE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <!--  footer_box code end -->
+
+
+
+    </div>
+</body>
+
+</html>
